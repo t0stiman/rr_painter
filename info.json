@@ -1,0 +1,10 @@
+{
+	"Id": "painter",
+	"Version": "0.0.1",
+	"DisplayName": "painter",
+	"Author": "Tostiman",
+	"EntryMethod": "painter.Main.Load",
+	"AssemblyName": "painter.dll",
+	"HomePage": "https://github.com/t0stiman/rr_painter",
+	"Repository": "https://raw.githubusercontent.com/t0stiman/rr_painter/master/repository.json"
+}

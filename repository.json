@@ -1,0 +1,9 @@
+{
+    "Releases": [
+        {
+            "Id": "painter",
+            "Version": "0.0.1",
+            "DownloadUrl": "https://github.com/t0stiman/rr_painter/releases/download/v0.0.1/painter.zip"
+        }
+    ]
+}
