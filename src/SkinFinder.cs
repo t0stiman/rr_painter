@@ -104,17 +104,17 @@ public static class SkinFinder
 
 		aSkin.Textures = new List<Texture2D>();
 
-		for (var i = 0; i < texturePaths.Count; i++)
+		foreach (var path in texturePaths)
 		{
 			var newTexture = new Texture2D(2, 2);
-			var loadedSuccessfully = newTexture.LoadImage(File.ReadAllBytes(texturePaths[i]));
+			var loadedSuccessfully = newTexture.LoadImage(File.ReadAllBytes(path));
 			if (!loadedSuccessfully)
 			{
-				Main.Error($"image at {texturePaths[i]} failed to load");
+				Main.Error($"image at {path} failed to load");
 				Object.Destroy(newTexture);
 				return false;
 			}
-			newTexture.name = Path.GetFileNameWithoutExtension(texturePaths[i]);
+			newTexture.name = Path.GetFileNameWithoutExtension(path);
 			aSkin.Textures.Add(newTexture);
 		}
 		
